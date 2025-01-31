@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <title>GREEN BASKET</title>
+
+    <!-- Bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <style>
+        /* Custom styles for the login page */
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            margin-bottom: 40px;
+        }
+
+        .login-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin: auto; /* Center the login box */
+            margin-top: 50px; /* Add space above the box */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .btn-custom {
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .toggle-link {
+            font-weight: bold;
+            cursor: pointer;
+            color: #007bff;
+        }
+
+        .toggle-link:hover {
+            text-decoration: underline;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero_area">
+        <!-- header section starts -->
+        <header class="header_section">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <a class="navbar-brand" href="index.html">
+                    <span>GREEN BASKET</span>
+                </a>
+                <div class="collapse navbar-collapse innerpage_navbar" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="why.html">Why Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <div class="user_option">
+                        <a href="login.html">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <span>Login</span>
+                        </a>
+                        <a href=""><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- end header section -->
+    </div>
+    <!-- end hero area -->
+
+    <!-- login section -->
+    <section class="why_section layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2>LOGIN</h2>
+            </div>
+            <div class="login-container">
+                <div id="loginForm">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">Remember Me</label>
+                        </div>
+                        <button type="submit" class="btn-custom">Login</button>
+                        <div class="register-link">
+                            <span>Don't have an account? <span class="toggle-link" onclick="toggleForms()">Register</span></span>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="registerForm" class="hidden">
+                    <h2 class="text-center">Register</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="regEmail">Email</label>
+                            <input type="email" class="form-control" id="regEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="regPassword">Password</label>
+                            <input type="password" class="form-control" id="regPassword" required>
+                        </div>
+                        <button type="submit" class="btn-custom">Register</button>
+                        <div class="register-link">
+                            <span>Already have an account? <span class="toggle-link" onclick="toggleForms()">Login</span></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end login section -->
+
+    <!-- info section -->
+    <section class="info_section layout_padding2-top">
+        <div class="info_container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <h6>ABOUT US</h6>
+                        <p>At Green Basket, we’re passionate about delivering fresh, high-quality groceries to your door. Committed to sustainability and supporting local farmers, we strive to make healthy living easy and enjoyable for all. Thank you for choosing us as your trusted grocery partner!</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h6>NEED HELP</h6>
+                        <p>We’re here for you! If you have any questions or need assistance with your order, don’t hesitate to reach out. Our friendly customer service team is ready to help you make the most of your Green Basket experience. Contact us anytime!</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h6>CONTACT US</h6>
+                        <div class="info_link-box">
+                            <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i><span> Vaishali Nagar, Jaipur </span></a>
+                            <a href=""><i class="fa fa-phone" aria-hidden="true"></i><span>+91 9571227901</span></a>
+                            <a href=""><i class="fa fa-envelope" aria-hidden="true"></i><span> gauravsinghrathore0045@gmail.com</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end info section -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        function toggleForms() {
+            const loginForm = document.getElementById('loginForm');
+            const registerForm = document.getElementById('registerForm');
+            if (loginForm.classList.contains('hidden')) {
+                loginForm.classList.remove('hidden');
+                registerForm.classList.add('hidden');
+            } else {
+                loginForm.classList.add('hidden');
+                registerForm.classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+
+</html>
