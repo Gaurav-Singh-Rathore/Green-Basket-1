@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/x-icon">
+
+  <title>
+    GREEN BASKET
+  </title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+
+   <!-- Bootstrap core large CSS -->
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap-large.css') }}" />
+
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section">
+      <nav  style="z-index: 1000;" class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="{{ url_for('home') }}">
+          <span>
+            GREEN BASKET
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""></span>
+        </button>
+
+        <div class="collapse navbar-collapse innerpage_navbar" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('shop') }}">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('why') }}">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('store') }}">Store</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('contact') }}">Contact Us</a>
+            </li>
+          </ul>
+          <div class="user_option">
+            <a href="{{ url_for('login') }}">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <span>Login</span>
+            </a>
+            <!-- <a href="#">
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </a> -->
+            <button class="btn btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  <!-- end hero area -->
+
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding">
+    <div class="container px-0">
+      <div class="heading_container">
+        <h2>Contact Us</h2>
+      </div>
+    </div>
+    <div class="container container-bg">
+      <div class="row">
+        <div class="col-lg-7 col-md-6 px-0">
+          <div class="map_container">
+            <div class="map-responsive">
+              <iframe src="{{ url_for('static', filename='images/p9.png') }}" width="600" height="300" frameborder="0"
+                style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-5 px-0">
+          <form action="{{ url_for('contact') }}" method="POST">
+            <div>
+                <input type="text" name="name" placeholder="Name" required />
+            </div>
+            <div>
+                <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <div>
+                <input type="text" name="phone" placeholder="Phone" />
+            </div>
+            <div>
+                <textarea name="message" class="message-box" placeholder="Message" required></textarea>
+            </div>
+            <div class="d-flex">
+                <button type="submit">SEND</button>
+            </div>
+        </form>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2-top">
+    <div class="info_container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <h6>ABOUT US</h6>
+            <p>
+              At Green Basket, we’re passionate about delivering fresh, high-quality groceries to your door.
+              Committed to sustainability and supporting local farmers, we strive to make healthy living easy
+              and enjoyable for all. Thank you for choosing us as your trusted grocery partner!
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h6>NEED HELP</h6>
+            <p>
+              We’re here for you! If you have any questions or need assistance with your order, don’t hesitate
+              to reach out. Our friendly customer service team is ready to help you make the most of your Green
+              Basket experience. Contact us anytime!
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h6>CONTACT US</h6>
+            <div class="info_link-box">
+              <a href="#">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span> Vaishali Nagar, Jaipur </span>
+              </a>
+              <a href="#">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>+91 9571227901</span>
+              </a>
+              <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span> gauravsinghrathore0045@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- Scripts -->
+  <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+  <!-- <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script> -->
+  <script src="{{ url_for('static', filename='js/bootstrap-large.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+</body>
+
+</html>
